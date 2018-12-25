@@ -1,10 +1,10 @@
-from svm import StockPrediction, StockPredNoClassification
+from classifier import classifier
 from sklearn.ensemble import RandomForestClassifier
 import numpy as np
 
-class RandomForest(StockPredNoClassification):
+class RandomForest(classifier):
     def __init__(self, microDataLoc, estimators=55, depth=7):
-        StockPredNoClassification.__init__(self, microDataLoc)
+        classifier.__init__(self, microDataLoc)
         self.estimators = estimators
         self.depth = depth
 
