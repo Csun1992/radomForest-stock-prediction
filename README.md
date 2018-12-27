@@ -1,6 +1,10 @@
 # Project Purpose
 Predicting stock price moving direction with a random forest
 
+# Dependencies
+- Numpy
+- sckit-learn
+
 # Detailed Description of the Machine Learning Algorithm
 In this project, we predict the direction of stock price movement in the future months. So essentially, it is a classification problem.
 
