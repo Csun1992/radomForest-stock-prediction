@@ -1,10 +1,10 @@
-from classifier import classifier
+from classifier import Classifier
 from sklearn.ensemble import RandomForestClassifier
 import numpy as np
 
-class RandomForest(classifier):
+class RandomForest(Classifier):
     def __init__(self, microDataLoc, estimators=55, depth=7):
-        classifier.__init__(self, microDataLoc)
+        Classifier.__init__(self, microDataLoc)
         self.estimators = estimators
         self.depth = depth
 
@@ -18,8 +18,8 @@ class RandomForest(classifier):
 
 if __name__ == "__main__":
     
-    depth = map(int, np.linspace(2, 10, 4))
-    estimators = map(int, np.linspace(5, 200, 20))
+    depth = map(int, np.linspace(2, 10, 2))
+    estimators = map(int, np.linspace(5, 200, 2))
 
     for i in depth:
         for j in estimators:
